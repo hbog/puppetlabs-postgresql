@@ -182,6 +182,7 @@ class postgresql::globals (
         /^(jessie|8\.)/  => '9.4',
         /^(stretch|9\.)/ => '9.6',
         /^(buster|10\.)/ => '11',
+        /^(bullseye|11\.)/ => '13',
         default => undef,
       },
       'Ubuntu' => $::operatingsystemrelease ? {
